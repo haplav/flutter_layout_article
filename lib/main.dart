@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
-  Widget build(BuildContext context) => const FlutterLayoutArticle(<Example>[
+  Widget build(BuildContext context) => const FlutterLayoutArticle([
         Example1(),
         Example2(),
         Example3(),
@@ -64,7 +64,7 @@ class FlutterLayoutArticle extends StatefulWidget {
   const FlutterLayoutArticle(this.examples, {super.key});
 
   @override
-  _FlutterLayoutArticleState createState() => _FlutterLayoutArticleState();
+  createState() => _FlutterLayoutArticleState();
 }
 
 //////////////////////////////////////////////////
@@ -142,7 +142,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                       child: Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Column(
-                          children: <Widget>[
+                          children: [
                             Center(child: Text(code)),
                             const SizedBox(height: 15),
                             Text(
