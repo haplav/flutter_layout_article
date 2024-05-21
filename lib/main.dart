@@ -135,27 +135,27 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                     ),
                   ),
                   Container(
-                      height: 273,
-                      color: Colors.grey[200],
-                        child: SingleChildScrollView(
-                          key: ValueKey(count),
-                          child: Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: Column(
-                              children: <Widget>[
-                                Center(child: Text(code)),
-                                const SizedBox(height: 15),
-                                Text(
-                                  explanation,
-                                  style: TextStyle(
-                                      color: Colors.blue[900],
-                                      fontStyle: FontStyle.italic),
-                                ),
-                              ],
+                    height: 273,
+                    color: Colors.grey[200],
+                    child: SingleChildScrollView(
+                      key: ValueKey(count),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          children: <Widget>[
+                            Center(child: Text(code)),
+                            const SizedBox(height: 15),
+                            Text(
+                              explanation,
+                              style: TextStyle(
+                                  color: Colors.blue[900],
+                                  fontStyle: FontStyle.italic),
                             ),
-                          ),
+                          ],
                         ),
                       ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -875,7 +875,8 @@ class Example24 extends Example {
       children: [
         Container(
             color: red,
-            child: const Text("This is a very long text that won't fit the line.",
+            child: const Text(
+                "This is a very long text that won't fit the line.",
                 style: big)),
         Container(color: green, child: const Text("Goodbye!", style: big)),
       ],
@@ -909,7 +910,8 @@ class Example25 extends Example {
             child: Center(
           child: Container(
               color: red,
-              child: const Text("This is a very long text that won't fit the line.",
+              child: const Text(
+                  "This is a very long text that won't fit the line.",
                   style: big)),
         )),
         Container(color: green, child: const Text("Goodbye!", style: big)),
@@ -943,11 +945,12 @@ class Example26 extends Example {
         Expanded(
             child: Container(
                 color: red,
-                child: const Text("This is a very long text that won't fit the line.",
+                child: const Text(
+                    "This is a very long text that won't fit the line.",
                     style: big))),
         Expanded(
-            child:
-                Container(color: green, child: const Text("Goodbye!", style: big))),
+            child: Container(
+                color: green, child: const Text("Goodbye!", style: big))),
       ],
     );
   }
@@ -980,13 +983,19 @@ class Example27 extends Example {
     return Row(
       children: [
         Flexible(
-            child: Container(
-                color: red,
-                child: const Text("This is a very long text that won't fit the line.",
-                    style: big))),
+          child: Container(
+            color: red,
+            child: const Text(
+                "This is a very long text that won't fit the line.",
+                style: big),
+          ),
+        ),
         Flexible(
-            child:
-                Container(color: green, child: const Text("Goodbye!", style: big))),
+          child: Container(
+            color: green,
+            child: const Text("Goodbye!", style: big),
+          ),
+        ),
       ],
     );
   }
