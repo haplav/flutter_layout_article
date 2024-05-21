@@ -137,7 +137,6 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                   Container(
                       height: 273,
                       color: Colors.grey[200],
-                      child: Scrollbar(
                         child: SingleChildScrollView(
                           key: ValueKey(count),
                           child: Padding(
@@ -156,7 +155,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                             ),
                           ),
                         ),
-                      )),
+                      ),
                 ],
               ),
             ),
